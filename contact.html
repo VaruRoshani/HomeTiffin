@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fdf6ec">
+  <title>Contact us | Home Tiffin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <script src="script.js?v=1" defer></script>
+</head>
+<body data-page="contact">
+  <header id="site-header"></header>
+  <main class="page-shell">
+    <section class="page-intro reveal">
+      <p class="eyebrow">We're right around the corner</p>
+      <h1>Contact us</h1>
+      <p>We'd love to hear from you.</p>
+    </section>
+    <div class="contact-layout">
+      <section class="contact-card contact-card--reach">
+        <p class="eyebrow">Say hello</p>
+        <h2>Reach us</h2>
+        <div class="contact-details">
+          <a href="tel:+911800123456"><span class="detail-icon" aria-hidden="true">☎</span><span><small>Give us a call</small><strong>+91 1800 123 456</strong></span></a>
+          <a href="mailto:hello@hometiffin.in"><span class="detail-icon" aria-hidden="true">✉</span><span><small>Drop us a line</small><strong>hello@hometiffin.in</strong></span></a>
+          <div><span class="detail-icon" aria-hidden="true">⌖</span><span><small>Where we go</small><strong>Daily home delivery</strong></span></div>
+        </div>
+        <div class="provider-callout"><span aria-hidden="true">✳</span><div><strong>Want to become a provider?</strong><p>Send us a message — we'll set up your provider account.</p></div></div>
+      </section>
+      <section class="contact-card">
+        <p class="eyebrow">A note is always welcome</p>
+        <h2>Send a message</h2>
+        <form id="contact-form" class="form-stack">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" placeholder="Your name" autocomplete="name" required>
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+          <button class="button button--primary button--full" type="submit">Send message <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>

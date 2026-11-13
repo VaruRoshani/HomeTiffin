@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fdf6ec">
+  <title>Track your order | Home Tiffin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <script src="script.js?v=1" defer></script>
+</head>
+<body data-page="track">
+  <header id="site-header"></header>
+  <main class="page-shell page-shell--narrow">
+    <section class="track-card">
+      <span class="track-card__icon" aria-hidden="true">⌖</span>
+      <p class="eyebrow">The good stuff is on its way</p>
+      <h1>Track your order</h1>
+      <p class="muted">Enter your order number (e.g. ORD001) to see real-time status.</p>
+      <form id="track-form" class="track-form">
+        <label for="order-number">Order number</label>
+        <div class="input-with-icon"><span aria-hidden="true">⌕</span><input id="order-number" name="orderNumber" placeholder="ORD001" autocomplete="off" required></div>
+        <button class="button button--primary button--full" type="submit"><span aria-hidden="true">⌕</span> Track order</button>
+      </form>
+      <p class="form-message" id="track-message" role="status" aria-live="polite"></p>
+      <div id="tracking-result" class="tracking-result" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
